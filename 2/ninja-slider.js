@@ -1,5 +1,4 @@
-var slide = 0;
-
+  
 var nsOptions =
 {
     sliderId: "ninja-slider",
@@ -18,11 +17,9 @@ var nsOptions =
     license: "mylicense"
 };
 
-document.addEventListener("DOMContentLoaded", ready);
 
-function ready() {
-    var nslider = new NinjaSlider(nsOptions);
-}
+var nslider = new NinjaSlider(nsOptions);
+
 
 /* Ninja Slider v2015.10.26 Copyright www.menucool.com */
 function NinjaSlider(a) {
@@ -517,7 +514,6 @@ function NinjaSlider(a) {
             a.a = a.license;
             a.d = a.autoAdvance;
             a.e = a.delay;
-            slide++;
             a.f = a.transitionSpeed;
             a.g = a.aspectRatio;
             a.j = a.shuffle;
@@ -830,3 +826,4 @@ function NinjaSlider(a) {
         }
     }
 }
+
