@@ -13,6 +13,7 @@ a.font {
 }
 
 a.boring {
+	display: block;
 	position: absolute;
 	top: 30vh;
 	right: 10vh;
@@ -29,5 +30,16 @@ a.interesting:hover {
 }
 
 a.boring:hover {   
+	cursor:pointer;
 	text-shadow: 1px 1px 2px black, 0 0 1em blue;
+}
+
+.boring-image{
+    
+    width:200px;
+    height:200px;
+	background-size: 200px 200px;
+    background-image: url("../img/boring.png");
+    display:none;
+    position:absolute;
 }
