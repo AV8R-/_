@@ -39,39 +39,146 @@
             top: 0px;
             left: 0px;
             z-index: 1000;
+            padding: 0px;
+        }
+        
+        .name {
+            color: whitesmoke;
+            font-family: Geneva, Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            position: relative;
+            top: 10px;
+            left: 10px;
+        }
+        body {
+            background-color: black;
+        }
+        
+        .button {
+            position: absolute;
+            right: 30px;
+            top: 10px;
+     
+            /*Step 2: Basic Button Styles*/
+            display: block;
+            height: 30px;
+            width: 200px;
+            background: transparent;
+            border: 2px solid grey;
+            
+            /*Step 3: Text Styles*/
+            color: rgba(0, 0, 0, 0.55);
+            text-align: center;
+            font: bold 1em/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+            color: grey;
+            
+            -webkit-border-radius: 50px;
+            -khtml-border-radius: 50px;
+            -moz-border-radius: 50px;
+            border-radius: 50px;
+            
+        }
+        
+        /*Step 3: Link Styles*/
+        a.button2 {
+            text-decoration: none;
+        }
+        
+        /*Step 5: Hover Styles*/
+        a.button:hover {
+            background: #F4FA58;
+            background: -webkit-linear-gradient(top, #F4FA58, #AEB404);
+            background: -moz-linear-gradient(top, #F4FA58, #AEB404);
+            background: -o-linear-gradient(top, #F4FA58, #AEB404);
+            background: -ms-linear-gradient(top, #F4FA58, #AEB404);
+            background: linear-gradient(top, #F4FA58, #AEB404);
+            opacity: 0.8;
+        }
+        
+        * {
+        margin: 0;
+        padding: 0;
+        }
+        .content {
+        min-height: calc(100vh - 80px);
+        }
+        .footer {
+			height: 80px;
+            background-color: rgba(30, 30, 30, 0.1);
+            padding:0px;
+		}
+        
+        .contacts-block {
+            position: static;
+            padding-top:15px;
+            padding-left: 100px;
+        }
+        
+        .vk {
+            display: block;
+            position: relative;
+            height: 50px;
+            width: 50px;
+            background-image: url("img/vk.png");
+            background-size: 50px 50px;
+            color:white;
+            float: left;
+            margin-right: 20px;
+        }
+        
+        .contacts {
+            float: left;
+            color: gainsboro;
         }
     </style>
 </head>
 <body>
-    <div id="header">a</div>
+    <div id="header"><span class="name">БОГДАН МАНШИЛИН</span>
+        <a href="mailto:skimphiter@gmail.com" class="button">skimphiter@gmail.com</a>
+    </div>
     <!--start-->
-    <div id="ninja-slider">
-        <div class="slider-inner">
-            <ul>
-                <li>
-                    <a class="ns-img" href="img/1.png"></a>
-                    <div class="caption">ПРИВЕТ</div>
-                </li>
-                <li>
-                    <a class="ns-img" href="img/2.png"></a>
-                    <div class="caption">МОТИВАЦИЯ</div>
-                </li>
-                <li>
-                    <a class="ns-img" href="img/3.png"></a>
-                    <div class="caption">ЗАДАТКИ</div>
-                </li>
-                <li>
-                    <a class="ns-img" href="img/4.gif"></a>
-                    <div class="caption">КОМАНДНЫЙ ИГРОК</div>
-                </li>
-                <li>
-                    <a class="ns-img" href="img/5.gif"></a>
-                    <div class="caption">ЗВОНИТЕ<br>+7 (919) 216-60-79</div>
-                </li>
-            </ul>
-            <div class="navsWrapper">
-                <div id="ninja-slider-prev"></div>
-                <div id="ninja-slider-next"></div>
+    <div class = "content">
+        <div id="ninja-slider">
+            <div class="slider-inner">
+                <ul>
+                    <li>
+                        <a class="ns-img" href="img/1.png"></a>
+                        <div class="caption">ПРИВЕТ</div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/2.png"></a>
+                        <div class="caption">МОТИВАЦИЯ</div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/3.png"></a>
+                        <div class="caption">ЗАДАТКИ</div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/4.gif"></a>
+                        <div class="caption">КОМАНДНЫЙ ИГРОК</div>
+                    </li>
+                    <li>
+                        <a class="ns-img" href="img/5.gif"></a>
+                        <div class="caption">ЗВОНИТЕ<br>+7 (919) 216-60-79</div>
+                    </li>
+                </ul>
+                <div class="navsWrapper">
+                    <div id="ninja-slider-prev"></div>
+                    <div id="ninja-slider-next"></div>
+                </div>
+            </div>
+        </div>
+    <audio controls autoplay>
+        <source src="audio/final.wav" type="audio/wav">
+    </audio>
+    </div>
+    <div class="footer">
+        <div class="contacts-block">
+            <a href ="http://vk.com/id266647388" > <div class="vk"></div> </a>
+            <div class="contacts">
+                Тел: +7 (919) 216-60-79 <br>
+                Skype: skimphiter <br>
+                E-mail: skimphiter@gmail.com                        
             </div>
         </div>
     </div>

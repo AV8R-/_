@@ -13,9 +13,10 @@
 
 #ninja-slider div.slider-inner {
     /*max-width:720px;*/
-    margin:0 auto;/*center-aligned */
+    margin:auto;/*center-aligned */
     font-size:0px;
     position:relative;
+    top: 30px;
     box-sizing:border-box;
 }
 
@@ -88,6 +89,12 @@
     bottom:20%;
 }
 #ninja-slider li[class*='-'] div.caption {
+    /* 5s = delay + transitionSpeed */
+    -webkit-animation: titleAnimation 30s linear both;
+    animation: titleAnimation 30s linear both;
+}
+
+#ninja-slider li[class*='-'] div.caption2 {
     /* 5s = delay + transitionSpeed */
     -webkit-animation: titleAnimation 30s linear both;
     animation: titleAnimation 30s linear both;
