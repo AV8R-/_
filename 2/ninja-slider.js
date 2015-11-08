@@ -18,7 +18,12 @@ var nsOptions =
     license: "mylicense"
 };
 
-var nslider = new NinjaSlider(nsOptions);
+document.addEventListener("DOMContentLoaded", ready);
+
+function ready() {
+    var nslider = new NinjaSlider(nsOptions);
+}
+
 /* Ninja Slider v2015.10.26 Copyright www.menucool.com */
 function NinjaSlider(a) {
     "use strict";
