@@ -3,6 +3,7 @@ body {
 	background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
+	background-size: 100% auto;
 }
 
 a.font {
@@ -42,4 +43,5 @@ a.boring:hover {
     background-image: url("../img/boring.png");
     display:none;
     position:absolute;
+	opacity: 0.6;
 }
