@@ -1,0 +1,33 @@
+body {
+	background-image: url("../img/morpheus.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+a.font {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 2em;
+	color: gainsboro;
+	text-decoration: none;
+}
+
+a.boring {
+	position: absolute;
+	top: 30vh;
+	right: 10vh;
+}
+
+a.interesting {
+	position: absolute;
+	top: 30vh;
+	left: 10vh;
+}
+
+a.interesting:hover {   
+	text-shadow: 1px 1px 2px black, 0 0 1em red;
+}
+
+a.boring:hover {   
+	text-shadow: 1px 1px 2px black, 0 0 1em blue;
+}

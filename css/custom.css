@@ -35,7 +35,7 @@ body {font: normal 0.9em Arial;margin:0;}
         
         .name {
             color: whitesmoke;
-            font-family: Geneva, Arial, Helvetica, sans-serif;
+            font-family: sans-serif;
             font-size: 2em;
             position: relative;
             top: 10px;
@@ -110,7 +110,7 @@ body {font: normal 0.9em Arial;margin:0;}
             position: relative;
             height: 50px;
             width: 50px;
-            background-image: url("img/vk.png");
+            background-image: url("../img/vk.png");
             background-size: 50px 50px;
             color:white;
             float: left;
